@@ -4,49 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>16x16 Grid</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
-        }
-
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(16, 1fr);
-            grid-template-rows: repeat(16, 1fr);
-            gap: 2px; /* Adjust gap between squares if needed */
-            width: 400px; /* Adjust to control the overall grid size */
-            height: 400px; /* Matches the width for square proportions */
-            border: 2px solid #333;
-        }
-
-        .grid-item {
-            background-color: #ccc;
-            border: 1px solid #aaa;
-            width: 100%; /* Ensures square sizing */
-            height: 100%;
-        }
-
-        .grid-item:hover {
-            background-color: #666; /* Changes color on hover */
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="grid-container" id="grid-container"></div>
-    <script>
-        // JavaScript to dynamically generate the grid
-        const gridContainer = document.getElementById("grid-container");
-
-        for (let i = 0; i < 16 * 16; i++) {
-            const gridItem = document.createElement("div");
-            gridItem.classList.add("grid-item");
-            gridContainer.appendChild(gridItem);
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

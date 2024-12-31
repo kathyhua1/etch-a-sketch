@@ -1,0 +1,25 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr); /* 16 columns, each taking equal width */
+    grid-template-rows: repeat(16, 1fr); /* 16 rows, each taking equal height */
+    gap: 2px; /* Space between the squares */
+    width: 80vmin; /* Make the grid size relative to the viewport */
+    height: 80vmin; /* Make the grid size relative to the viewport */
+}
+
+.square {
+    background-color: #3498db;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
