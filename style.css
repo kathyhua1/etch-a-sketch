@@ -9,6 +9,16 @@ body {
     background-color: #f4f4f4;
 }
 
+.redoGrid{
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: white;
+    color: #2563eb;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(16, 1fr); /* 16 columns, each taking equal width */

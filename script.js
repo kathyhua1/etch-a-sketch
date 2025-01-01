@@ -15,3 +15,5 @@ document.addEventListener("DOMContentLoaded", function() {
         gridContainer.appendChild(square);
     }
 });
+
+//Replace the grid button - redoGrid 
